@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:elements": "ng build --prod --output-hashing none && node elements-build.js"
+    "build:elements": "ng build --prod --output-hashing none && node elements-build.js",
+    "static-server": "echo cd to elements and run static-server"
   },
   "private": true,
   "dependencies": {
