@@ -5,7 +5,7 @@ import {AppService} from './app.service';
   selector: 'app-momentum-element',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
