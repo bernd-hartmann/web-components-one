@@ -1,6 +1,7 @@
 <div class="widget-container">
   <div class="content">
     <h1>Hello, {{name}}.</h1>
+    <h2>{{today| date:'short' }}</h2>
     <input *ngIf="!focusSet" type="text" #userFocus (keydown.enter)="setFocus(userFocus.value)"
            placeholder="{{question}}"/>
     <div *ngIf="focusSet" class="focus">

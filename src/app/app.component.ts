@@ -15,6 +15,7 @@ export class AppComponent {
   public focusSet = false;
   public text = 'a';
   public question = 'b';
+  public today = new Date();
 
   constructor(private appService: AppService) {
     this.text = appService.get('text');
