@@ -1,4 +1,5 @@
 import {Component, ViewEncapsulation, Input} from '@angular/core';
+import {AppService} from './app.service';
 
 @Component({
   selector: 'app-momentum-element',
@@ -12,8 +13,13 @@ export class AppComponent {
   public name = 'friend';
   public focus: string;
   public focusSet = false;
-  public text = 'Your main focus today is the following: ';
-  public question = 'Your main focus today is:';
+  public text = 'a';
+  public question = 'b';
+
+  constructor(private appService: AppService) {
+    this.text = appService.get('text');
+    this.question = appService.get('question');
+  }
 
   public setFocus(value) {
     this.focus = value;

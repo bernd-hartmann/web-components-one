@@ -3,6 +3,7 @@ import {Injector, NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {createCustomElement} from '@angular/elements';
+import {AppService} from './app.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import {createCustomElement} from '@angular/elements';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AppService],
   entryComponents: [AppComponent]
 })
 export class AppModule {
