@@ -8,11 +8,14 @@ import {Component, ViewEncapsulation, Input} from '@angular/core';
 })
 
 export class AppComponent {
-  @Input() name = 'friend';
-  focus: string;
-  focusSet = false;
+  @Input()
+  public name = 'friend';
+  public focus: string;
+  public focusSet = false;
+  public text = 'Your main focus today is the following: ';
+  public question = 'Your main focus today is:';
 
-  setFocus(value) {
+  public setFocus(value) {
     this.focus = value;
     this.focusSet = true;
   }
